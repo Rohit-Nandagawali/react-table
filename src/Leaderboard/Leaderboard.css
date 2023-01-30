@@ -1,0 +1,295 @@
+body {
+    background-color: #2b2236;
+    color: #a59cae;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 479px) {
+    body {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+.card {
+    border: 1px solid #4b3b60;
+    border-radius: 4px;
+    background-color: #392d49;
+    margin-bottom: 15px;
+}
+
+.card--has-table>.card__content {
+    padding: 0;
+}
+
+.card--has-table>.card__content .table {
+    margin-bottom: 0;
+}
+
+.card__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    min-height: 72px;
+    padding: 22px 24px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    position: relative;
+    border-bottom: 1px solid #4b3b60;
+    overflow: hidden;
+    background-color: #403351;
+}
+
+.card__header~.card__header {
+    border-radius: 0;
+}
+
+.card__header~.card__header::before {
+    border-radius: 0;
+}
+
+.card__header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #00ff5b;
+    border-radius: 3px 0 0 0;
+}
+
+.card__header>h4 {
+    font-size: 16px;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;
+    margin: 0 0 0.75em 0;
+    font-weight: 700;
+}
+
+.card__content {
+    padding: 24px 24px;
+}
+
+@media (max-width: 767px) {
+    .table-responsive {
+        border: none;
+        margin-bottom: 0;
+    }
+}
+
+.table {
+    color: #a59cae;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.table-hover>tbody>tr {
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+.table-hover>tbody>tr:hover {
+    color: #a59cae;
+    background-color: #403351;
+}
+
+.table-standings {
+    border: none;
+    margin-bottom: 0;
+}
+
+.team-meta {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.team-meta__logo {
+    width: 35px;
+    height: 30px;
+    -webkit-margin-end: 2px;
+    margin-inline-end: 2px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+figure {
+    margin: 0;
+}
+
+.team-meta__name {
+    color: #fff;
+    margin: 0 0 0.75em 0;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.team-meta__info {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.team-meta__name {
+    font-size: 12px;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    text-transform: none;
+    font-weight: 700;
+}
+
+.team-meta__place {
+    display: block;
+    font-size: 9px;
+    line-height: 1.2em;
+    color: #a59cae;
+    font-family: "Open Sans", sans-serif;
+}
+
+tr {
+    border-left: 1px solid #4b3b60;
+    border-bottom: 1px solid #4b3b60;
+}
+
+td.highlight {
+    color: #fff;
+}
+
+/* Table Standings: Full */
+.table-standings--full>thead>tr>th {
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #4b3b60;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 6.5px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 10px;
+    line-height: 1.42857143em;
+}
+
+@media (min-width: 992px) {
+    .table-standings--full>thead>tr>th:first-child {
+        padding-left: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+    .table-standings--full>thead>tr>th:last-child {
+        padding-right: 24px;
+    }
+}
+
+.table-standings--full>tbody>tr>td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .table-standings--full>tbody>tr>td:first-child {
+        padding-left: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+    .table-standings--full>tbody>tr>td:last-child {
+        padding-right: 24px;
+    }
+}
+
+.table-standings--full .team-standings__pos {
+    vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+    .table-standings--full .team-standings__pos {
+        padding-left: 24px;
+        width: 60px;
+    }
+}
+
+.table-standings--full .team-standings__team {
+    text-align: left;
+}
+
+@media (min-width: 1200px) {
+    .table-standings--full .team-standings__team {
+        width: 170px;
+    }
+}
+
+.table-standings--full .team-standings__win,
+.table-standings--full .team-standings__lose,
+.table-standings--full .team-standings__gb {
+    color: #fff;
+}
+
+.table-standings--full .team-standings__win,
+.table-standings--full .team-standings__lose,
+.table-standings--full .team-standings__pct,
+.table-standings--full .team-standings__gb,
+.table-standings--full .team-standings__home,
+.table-standings--full .team-standings__road,
+.table-standings--full .team-standings__div,
+.table-standings--full .team-standings__ppg,
+.table-standings--full .team-standings__op-ppg,
+.table-standings--full .team-standings__diff,
+.table-standings--full .team-standings__strk,
+.table-standings--full .team-standings__lead {
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+
+    .table-standings--full .team-standings__home,
+    .table-standings--full .team-standings__road,
+    .table-standings--full .team-standings__div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .table-standings--full .team-standings__lead {
+        padding-right: 30px;
+    }
+}
