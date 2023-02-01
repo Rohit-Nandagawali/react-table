@@ -1,6 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Leaderboard from './Leaderboard/Leaderboard';
+// import Leaderboard from './Leaderboard/Leaderboard';
+import CardHeader from './CardHeader/CardHeader';
+import TournamentBracket from './TournamentBracket/TournamentBracket';
 
 
 
@@ -8,8 +10,8 @@ import Leaderboard from './Leaderboard/Leaderboard';
 function App() {
   return (
     <div className="App">
-      
-      <Leaderboard/>
+      {/* <CardHeader/> */}
+      <TournamentBracket/>
     </div>
   );
 }
